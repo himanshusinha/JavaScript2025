@@ -66,13 +66,13 @@
 1
 */
 
-function reversNum(num) {
-  for (let i = num; i >= 1; i--) {
-    let num = "";
-    for (let j = 1; j <= i; j++) {
-      num += j;
-    }
-    console.log(num);
-  }
-}
-reversNum(5);
+// function reversNum(num) {
+//   for (let i = num; i >= 1; i--) {
+//     let num = "";
+//     for (let j = 1; j <= i; j++) {
+//       num += j;
+//     }
+//     console.log(num);
+//   }
+// }
+// reversNum(5);
