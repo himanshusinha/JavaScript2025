@@ -5,3 +5,7 @@ const a = 10,
   b = 20,
   c = a + b;
 console.log("Sum of two numbers a and b is :", c);
+
+//find square root of number
+const num = 25;
+console.log(Math.sqrt(num));
