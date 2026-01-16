@@ -19,7 +19,7 @@
 // const f = (1 / 2) * d * e;
 // console.log("Area of triangle is : " + f);
 
-/* Date 16.1.2026 */
+/* Date 16.1.2026 
 
 // 5 JavaScript Program to Swap Three Variables
 
@@ -59,4 +59,27 @@ if (number % 2 === 0) {
   console.log("Number is even");
 } else {
   console.log("Number is odd");
+}
+*/
+// 9 JavaScript program for multiplication of two numbers
+const l = 10;
+const m = 20;
+const n = l * m;
+
+console.log("Multiplication of two numbers l and m : " + n);
+
+// 10 JavaScript progam for addition of two float numbers
+const i = 10.5;
+const j = 11.5;
+const k = i + j;
+
+console.log("Additon of two float numbers i and j :" + k);
+
+// 11 JavaScript program for print natural numbers
+
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
+  sum += i;
+
+  console.log(`Addition of first 10 natural numbers ${i} ` + sum);
 }
