@@ -1,7 +1,7 @@
-// let js = "amazing";
-// if (js === "amazing") alert("JavaScript is FUN !!!!");
-// js = "boring";
-// if (js === "amazing") alert("JavaScript is FUN !!!!");
+/* let js = "amazing";
+if (js === "amazing") alert("JavaScript is FUN !!!!");
+js = "boring";
+if (js === "amazing") alert("JavaScript is FUN !!!!");
 40 + 8 + 23 - 10;
 console.log(40 + 8 + 23 - 10);
 
@@ -26,3 +26,21 @@ let job2 = "teacher";
 
 let person = "Jonas";
 let PI = 3.1415;
+ */
+
+// Data Types
+let javaScriptIsFun = true;
+console.log(typeof javaScriptIsFun);
+console.log(typeof true);
+console.log(typeof "Jonas");
+console.log(typeof 23);
+
+javaScriptIsFun = "YES!";
+console.log(typeof javaScriptIsFun);
+
+let year;
+console.log(typeof year);
+
+year = 1991;
+console.log(typeof year);
+console.log(typeof null);
