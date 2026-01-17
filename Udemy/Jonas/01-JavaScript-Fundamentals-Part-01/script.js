@@ -156,7 +156,7 @@ console.log(`String with
 multiples
 lines`);
 
- */
+
 
 const age = 15;
 if (age >= 18) {
@@ -174,3 +174,32 @@ if (birthYear >= 2000) {
   century = 19;
 }
 console.log("Century is :", century);
+
+
+// Type Conversion and Type Coersion
+// Type Conversion explicit manually conversion
+let s = "123";
+let n = Number(s);
+console.log(typeof n);
+
+// Type Coersion implicit by javascript automatically
+
+let t = 5;
+let u = "5";
+let r = t + u;
+console.log(r);
+console.log(typeof r);
+
+const inputYear = "1991";
+console.log(typeof Number(inputYear), typeof inputYear);
+console.log(Number(inputYear) + 18);
+
+// type coersion
+console.log(`I'm a ${23} year old `);
+console.log("23" - "10" - 3);
+console.log("24" * "3");
+ */
+
+let n = "1" + 1; // 11
+n = n - 1; // 11 -1
+console.log(n); // n = 10
