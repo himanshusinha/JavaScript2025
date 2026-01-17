@@ -60,7 +60,7 @@ if (number % 2 === 0) {
 } else {
   console.log("Number is odd");
 }
-*/
+
 // 9 JavaScript program for multiplication of two numbers
 const l = 10;
 const m = 20;
@@ -83,3 +83,5 @@ for (let i = 1; i <= 10; i++) {
 
   console.log(`Addition of first 10 natural numbers ${i} ` + sum);
 }
+*/
+/* Date 17.1.2026 */
