@@ -85,3 +85,57 @@ for (let i = 1; i <= 10; i++) {
 }
 */
 /* Date 17.1.2026 */
+// 12 Find the greatest of two numbers
+const a = 10;
+const b = 20;
+
+if (a > b) {
+  console.log("A is greater than B");
+} else {
+}
+console.log("B is greater than A");
+
+// 13 Check character is Vowel or consonant
+let char = "a";
+if (
+  char === "a" ||
+  char === "e" ||
+  char === "i" ||
+  char === "o" ||
+  char === "u"
+) {
+  console.log("Character is vowel");
+} else {
+  console.log("Character is consonant");
+}
+
+// 14 Check student is pass or fail
+let num = 35;
+if (num > 35) {
+  console.log("Pass");
+} else {
+  console.log("Fail");
+}
+
+// 15 Check number is divisile by 55 && 11
+let n = 55;
+if (n % 55 === 0 && n % 11 === 0) {
+  console.log("Number is divisible by 55 && 11");
+} else {
+  console.log("Number is not divisble by 55 && 11");
+}
+
+// 16 factorial of number
+let numb = 5;
+let fact = 1;
+
+for (let i = 1; i <= numb; i++) {
+  fact = fact * i;
+  console.log(fact);
+}
+
+// 17 Multiplication of table
+let mult = 3;
+for (let i = 1; i <= 10; i++) {
+  console.log(`Multiplication of ${mult}* ${i} = ${mult * i}`);
+}
