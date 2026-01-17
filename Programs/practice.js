@@ -130,7 +130,7 @@ let numb = 5;
 let fact = 1;
 
 for (let i = 1; i <= numb; i++) {
-  fact = fact * i;
+  fact *= i;
   console.log(fact);
 }
 
