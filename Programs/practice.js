@@ -84,7 +84,7 @@ for (let i = 1; i <= 10; i++) {
   console.log(`Addition of first 10 natural numbers ${i} ` + sum);
 }
 */
-/* Date 17.1.2026 */
+/* Date 17.1.2026 
 // 12 Find the greatest of two numbers
 const a = 10;
 const b = 20;
@@ -139,3 +139,71 @@ let mult = 3;
 for (let i = 1; i <= 10; i++) {
   console.log(`Multiplication of ${mult}* ${i} = ${mult * i}`);
 }
+  */
+
+// Date 18.1.2026
+// Sort Words in Alphabetical Order
+
+function sortOrder(str) {
+  const str2 = str.split(" ");
+  str2.sort();
+  // const str3 = str 2.
+
+  for (let i of str2) {
+    console.log(i);
+  }
+}
+const str4 = "I want to learn javascript programming";
+sortOrder(str4);
+// Date 19.1.2026
+// Print numbers from 1 to 5
+for (let i = 1; i <= 5; i++) {
+  console.log("Value of i :", i);
+}
+// Print numbers from 5 to 1
+for (let j = 5; j >= 1; j--) {
+  console.log("Reverse value of j", j);
+}
+// Number is greater than 100 or not
+const num = "-1";
+if (num > 100) {
+  console.log("Number is greater than 100");
+} else {
+  console.log("Number is less than 100");
+}
+
+// Print even numbers between 1 to 10
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log("Even numbers ", i);
+  }
+}
+// Date 20.1.2026
+//Check number is multiple of 5
+const numm = 25;
+if (numm % 5 === 0) {
+  console.log("Number is multiple of 5");
+} else {
+  console.log("Number is not multiple of 5");
+}
+
+// reverse a number
+function reverse(num) {
+  let sum = "";
+  let str = String(num);
+  for (let i = str.length - 1; i >= 0; i--) {
+    sum += str[i];
+  }
+  return Number(sum);
+}
+const numm11 = 12345678;
+const resultt = reverse(numm11);
+console.log(resultt);
+
+// const numArr = [1, 2, [3, 4], [5, 6]];
+const numArr = [1, 2, [3, 4], [5, 6]];
+const x = numArr.toString();
+const y = x.split(",");
+let finalArr = [];
+y.map((item) => finalArr.push(parseInt(item)));
+console.log(finalArr);
