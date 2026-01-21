@@ -143,7 +143,6 @@ for (let i = 1; i <= 10; i++) {
 
 // Date 18.1.2026
 // Sort Words in Alphabetical Order
-
 function sortOrder(str) {
   const str2 = str.split(" ");
   str2.sort();
@@ -155,6 +154,7 @@ function sortOrder(str) {
 }
 const str4 = "I want to learn javascript programming";
 sortOrder(str4);
+
 // Date 19.1.2026
 // Print numbers from 1 to 5
 for (let i = 1; i <= 5; i++) {
@@ -178,6 +178,7 @@ for (let i = 1; i <= 10; i++) {
     console.log("Even numbers ", i);
   }
 }
+
 // Date 20.1.2026
 //Check number is multiple of 5
 const numm = 25;

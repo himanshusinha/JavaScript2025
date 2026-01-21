@@ -176,4 +176,76 @@ switch (lang) {
   default:
     console.log("Other language");
 }
+
+
+// function declaration vs function expression
+
+// function declaration
+function add(a, b) {
+  return a + b;
+}
+console.log(add(2, 4));
+
+//Arrow function
+const addition = function (a, b) {
+  return a + b;
+};
+console.log(addition(3, 5));
+
+//function expression
+const substract = function (a, b) {
+  return a - b;
+};
+console.log(substract(10, 5));
+
+// function expression
+const greet = function () {
+  console.log("Hello Greet");
+};
+greet();
+
 */
+// function calling other function
+function multiply(a, b) {
+  return a * b;
+}
+
+function calculate() {
+  return multiply(2, 4);
+}
+
+console.log(calculate());
+
+function printSquare(num) {
+  return num * num;
+}
+
+function square() {
+  return printSquare(5);
+}
+
+console.log(square());
+
+function sayHello() {
+  console.log("Hello Greet");
+}
+
+function greet() {
+  sayHello();
+}
+
+greet();
+
+function double(x) {
+  return x * 2;
+}
+
+function triple(y) {
+  return y * 3;
+}
+
+function result(num) {
+  return double(num) + triple(num);
+}
+
+console.log(result(2));
