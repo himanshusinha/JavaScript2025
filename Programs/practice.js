@@ -208,3 +208,29 @@ const y = x.split(",");
 let finalArr = [];
 y.map((item) => finalArr.push(parseInt(item)));
 console.log(finalArr);
+
+// Date 21.1.2026
+// Program convert Km to miles
+const miles = 1 * 0.621371;
+const totalKm = 12;
+console.log(12 * 0.621371);
+
+// Program convert celsius to fahrenheit
+// (0*9/5)+32 = 32F
+const celsius = 10;
+(10 * 9) / 5 + 32;
+console.log((10 * 9) / 5 + 32);
+
+// fibonaci series 0,1,1,2,3,5,8,13
+let a = 0,
+  b = 1;
+
+console.log(a);
+console.log(b);
+
+for (let i = 2; i <= 10; i++) {
+  let next = a + b;
+  console.log(next);
+  a = b;
+  b = next;
+}
