@@ -139,7 +139,7 @@ let mult = 3;
 for (let i = 1; i <= 10; i++) {
   console.log(`Multiplication of ${mult}* ${i} = ${mult * i}`);
 }
-  */
+
 
 // Date 18.1.2026
 // Sort Words in Alphabetical Order
@@ -234,3 +234,38 @@ for (let i = 2; i <= 10; i++) {
   a = b;
   b = next;
 }
+  */
+// Date 22.1.2024
+/*
+ *
+ **
+ ***
+ */
+// Date 23.1.2024
+// function printStar(num) {
+//   for (let i = 1; i <= num; i++) {
+//     let sum = "";
+//     for (let j = 1; j <= i; j++) {
+//       sum += "*";
+//     }
+//     console.log(sum);
+//   }
+// }
+// printStar(3);
+
+/*
+ ***
+ **
+ *
+ */
+// Date 24.1.2024
+// function reverseStar(num) {
+//   for (let i = num; i >= 1; i--) {
+//     let sum = "";
+//     for (let j = 1; j <= i; j++) {
+//       sum += "*";
+//     }
+//     console.log(sum);
+//   }
+// }
+// reverseStar(3);
