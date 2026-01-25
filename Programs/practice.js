@@ -269,3 +269,38 @@ for (let i = 2; i <= 10; i++) {
 //   }
 // }
 // reverseStar(3);
+
+// Print number from 1 to 5
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i);
+// }
+
+// // Print reverse number from 5 to 1
+for (let i = 5; i >= 1; i--) {
+  console.log(i);
+}
+// Even numbers (1–20)
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) {
+    console.log("Even numbers:", i);
+  }
+}
+// Odd Numbers (1-15)
+for (let i = 1; i <= 15; i++) {
+  if (i % 2 !== 0) {
+    console.log("Odd numbers:", i);
+  }
+}
+const items = ["pen", "book", "bag", "scale"];
+console.log(items[items.length - 1]);
+console.log(items.length);
+
+const arr = [10, 45, 2, 89, 23];
+let sum = arr[0];
+
+for (let i = 1; i < arr.length; i++) {
+  if (arr[i] > sum) {
+    sum = arr[i];
+  }
+}
+console.log(sum);
