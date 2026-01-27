@@ -61,3 +61,13 @@ function pattern(num) {
   }
 }
 pattern(5);
+
+const arr = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
+let max = arr[0];
+
+for (let i = 0; i <= arr.length; i++) {
+  if (arr[i] > max) {
+    max = arr[i];
+  }
+}
+console.log(max);
