@@ -159,7 +159,7 @@ for (let i = 1; i <= 10; i++) {
   }
   console.log("continue", i);
 }
- */
+
 const userInfo = { name: "John", age: "33" };
 
 console.log(JSON.stringify(userInfo));
@@ -187,3 +187,4 @@ const isEven = num.reduce((acc, curr) => {
 }, "");
 
 console.log(isEven);
+ */
