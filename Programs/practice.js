@@ -178,3 +178,12 @@ const personalInfo = ["Himanshu", 34];
 for (const personal of personalInfo) {
   console.log(personal);
 }
+
+//reduce
+const num = [1, 2, 3, 4];
+
+const isEven = num.reduce((acc, curr) => {
+  return curr % 2 === 0 ? "Even" : "Odd";
+}, "");
+
+console.log(isEven);
