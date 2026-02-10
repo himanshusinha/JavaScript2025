@@ -77,7 +77,7 @@ for (let i = 1; i <= 100; i++) {
     console.log("Even Number from 1 to 100 is : ", i);
   }
 }
- */
+
 // 13 Count odd numbers from 1 to 100
 for (let i = 1; i <= 100; i++) {
   if (i % 2 !== 0) {
@@ -91,6 +91,7 @@ for (let i = 1; i <= 100; i++) {
     console.log("Number is divisible by 3 and 5 is :", i);
   }
 }
+   */
 //15 factorial of number
 let num = 5;
 let factorial = 1;
