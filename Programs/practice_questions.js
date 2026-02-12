@@ -1,3 +1,6 @@
+/* 
+
+
 // 10.2.2026
 
 // 1 print hello world
@@ -75,3 +78,37 @@ const aa = 10;
 const bb = 20;
 
 console.log((1 / 2) * aa * bb);
+
+*/
+// 12.2.2026
+
+// 1 Multiplication of two numbers
+const a = 10;
+const b = 20;
+const res = a * b;
+console.log(`Multiplication of ${a} and ${b} is ${res}`);
+
+// 2 Addition of two float numbers
+const c = 10.25;
+const d = 22.2;
+const ress = c + d;
+console.log(`Addition of ${c} and ${d} is ${ress}`);
+
+// 3 JavaScirpt program to convert km to miles
+const miles = 1 * 0.621371;
+const km = 12 * 0.621371;
+console.log(`km to miles is ${km}`);
+
+// 4 Javascript program of 1st 10 natural numbers
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
+  sum = sum + i;
+  console.log(`Sum of first 10 natural number is ${sum}`);
+}
+
+// 5 factorial of number
+let fact = 1;
+for (let i = 1; i <= 5; i++) {
+  fact = fact * i;
+  console.log(fact);
+}
