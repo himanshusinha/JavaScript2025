@@ -206,6 +206,7 @@ console.log("Average of numbers between 50-100:", avg);
 */
 
 /* 
+
  // Date 13.2.2026
 const arr = [5, 15, 22, 30, 10, 18];
 // 10 se bade numbers
@@ -520,5 +521,53 @@ for (let i = num.length - 1; i >= 0; i--) {
   }
 }
 console.log(min);
+// remove duplicate element from array
+const arr = [1, 2, 3, 2, 4, 3, 5];
+const unique = [];
 
+for (let i = 0; i < arr.length; i++) {
+  if (unique.indexOf(arr[i]) === -1) {
+    unique.push(arr[i]);
+  }
+}
+console.log(unique);
+
+//How to find duplicate values in array
+// const arr2 = [1, 2, 3, 2, 4, 3, 5];
+// let duplicates = [];
+
+// for (let i = 0; i < arr2.length; i++) {
+//   if (arr2.indexOf(arr2[i]) !== i && duplicates.indexOf(arr2[i]) === -1) {
+//     duplicates.push(arr2[i]);
+//   }
+// }
+
+// console.log(duplicates);
+// second largest from array
+
+
+const arr = [10, 20, 5, 30, 25];
+
+let largest = arr[0];
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > largest) {
+    largest = arr[i];
+  }
+}
+
+let secondLargest = arr[0];
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > secondLargest && arr[i] < largest) {
+    secondLargest = arr[i];
+  }
+}
+console.log("Second largest", secondLargest);
 */
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < arr.length; i++) {
+  if (i === arr.length / 2 || i === arr.length / 2 - 1) {
+    console.log(arr[i]);
+  }
+}
