@@ -1,3 +1,13 @@
+//"use strict" is a directive in JavaScript that enables strict mode, which enforces stricter parsing and error handling to prevent unsafe coding practices.
+
+"use strict";
+// x = 3.14;
+
+// sayCalc();
+
+// function sayCalc(y) {
+//   y = 3.15;
+// }
 /*  
 // Statements
 const age = 15;
@@ -375,7 +385,7 @@ console.log(Math.max(10, 20, 30));
 // Find minimum value
 console.log(Math.min(10, 20, 30));
 // 10
-*/
+
 
 // Functions
 
@@ -414,7 +424,7 @@ parameters (a, b) me assign ho jaate hain.
 Phir a*b calculate hota hai.
 return us result ko function ke bahar bhej deta hai.
 Wo value res variable me store ho jaati hai.
-*/
+
 
 // function declaration
 function multiply(a, b) {
@@ -508,7 +518,7 @@ console.log(Object.values(personInfo));
 // Converts the object into an array of key-value pairs
 // Each pair is stored as a two-element array
 console.log(Object.entries(personInfo));
-/*
+
 
 Output:
 [
@@ -516,7 +526,7 @@ Output:
   ["age", 30],
   ["city", "New York"]
 ]
-*/
+
 
 // JSON.stringify()
 // Converts a JavaScript object into a JSON string
@@ -564,3 +574,61 @@ const devInfo3 = new developerInfo("Peter", "NextJS");
 console.log(devInfo1.name);
 console.log(devInfo2.name);
 console.log(devInfo3.name);
+ 
+// Scopes
+
+// global scopes
+const x = 10;
+
+const y = 20;
+
+// Global Scope
+const globalVar = "I am global";
+
+function test() {
+  console.log(globalVar);
+}
+
+test();
+
+function greetName() {
+  const firstName = "John";
+  console.log(firstName);
+}
+greetName();
+// console.log(firstName);
+
+if (true) {
+  const blockVar = "Inside Block";
+  console.log(blockVar);
+}
+// console.log(blockVar);
+
+
+// Hoisting
+// Hoisting means JavaScript moves declarations to the top of their scope before execution. Only declarations are hoisted, not initialization.
+var a;
+console.log(a);
+a = 10;
+
+// console.log(b);
+// let b = 20;
+
+// declaration
+sayHello();
+
+//initialization
+function sayHello() {
+  console.log("Hello");
+}
+*/
+// Dates
+
+// let myDate = new Date();
+// console.log(myDate.toString());
+// console.log(myDate.toLocaleString());
+// console.log(myDate.toISOString());
+// console.log(myDate.toDateString());
+
+// let myCreatedDate = new Date(2026, 0, 12);
+// console.log(myCreatedDate.toDateString());
