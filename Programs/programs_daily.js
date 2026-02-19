@@ -89,4 +89,67 @@ for (let i = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
   }
 }
+
+// 19.2.2026 
+
+// 1 positive and negative count print karo
+let positiveCount = 0;
+let negativeCount = 0;
+const numbers = [10, -5, 0, 25, -30, 15, -2, 50, -100];
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    console.log("PositiveNumbers", numbers[i]);
+    positiveCount++;
+  } else {
+    console.log("NegativeNumbers", numbers[i]);
+    negativeCount++;
+  }
+}
+// 2 3 se 7 ke beech ke numbers count karo
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let count = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > 3 && arr[i] < 7) {
+    console.log(arr[i]);
+    count++;
+  }
+}
+console.log(count);
+
+// 3 55 - 150 ke beech ke numbers count karo
+const arr2 = [10, 55, 70, 120, 95, 40, 85, 150];
+let count2 = 0;
+for (let i = 0; i < arr2.length; i++) {
+  if (arr2[i] > 55 && arr2[i] < 150) {
+    console.log(arr2[i]);
+    count2++;
+  }
+}
+console.log(count2);
+
+// 4 50 - 100 ke beech ke numbers ka sum
+const arr3 = [10, 55, 70, 120, 95, 40, 85, 150];
+let count3 = 0;
+let sum3 = 0;
+for (let i = 0; i < arr3.length; i++) {
+  if (arr3[i] > 50 && arr3[i] < 100) {
+    console.log(arr3[i]);
+    sum3 += arr3[i];
+    count3++;
+  }
+}
+console.log(sum3);
+console.log(count3);
+
+// 5 50 - 100 ke beech ke numbers ko new array me store karo
+const num = [12, 55, 78, 34, 99, 120, 65, 43, 88, 150];
+
+let total = [];
+
+for (let i = 0; i < num.length; i++) {
+  if (num[i] > 50 && num[i] < 100) {
+    total.push(num[i]);
+  }
+}
+console.log(total);
 */

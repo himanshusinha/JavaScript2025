@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>Form Validation</h2>
+    <link rel="stylesheet" href="./style.css" />
+    <form id="form">
+      <input type="text" id="name" placeholder="Enter name" />
+      <p id="nameError" class="error"></p>
+
+      <input type="email" id="email" placeholder="Enter email" />
+      <p id="emailError" class="error"></p>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // page reload rokta hai
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+
+        const nameError = document.getElementById("nameError");
+        const emailError = document.getElementById("emailError");
+
+        nameError.textContent = "";
+        emailError.textContent = "";
+
+        let isValid = true;
+
+        if (name === "") {
+          nameError.textContent = "Name required";
+          isValid = false;
+        }
+
+        if (!email.includes("@")) {
+          emailError.textContent = "Invalid email";
+          isValid = false;
+        }
+
+        if (isValid) {
+          alert("Form submitted successfully");
+        }
+      });
+    </script>
+  </body>
+</html>
