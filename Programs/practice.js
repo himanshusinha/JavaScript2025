@@ -188,3 +188,14 @@ const isEven = num.reduce((acc, curr) => {
 
 console.log(isEven);
  */
+
+const arr = [10, 20, 30, 40, 50];
+const result = arr.slice(1, 4);
+console.log(result);
+
+arr.splice(1, 2);
+console.log(arr);
+arr.splice(2, 0, 60, 70);
+console.log(arr);
+arr.splice(1, 2, 99);
+console.log(arr);

@@ -153,3 +153,68 @@ for (let i = 0; i < num.length; i++) {
 }
 console.log(total);
 */
+
+// 20.2.2026
+// 1. 50-100 ke beech ke numbers ka average nikalo
+let sum = 0;
+let count = 0;
+const num = [12, 55, 78, 34, 99, 120, 65, 43, 88, 150];
+for (let i = 0; i < num.length; i++) {
+  if (num[i] > 50 && num[i] < 100) {
+    sum += num[i];
+    count++;
+  }
+}
+const average = sum / count;
+console.log(average);
+console.log(count);
+
+// 2. Reverse string
+const myName = "Himanshu";
+let newString = "";
+for (let i = myName.length - 1; i >= 0; i--) {
+  newString += myName[i];
+}
+console.log(newString);
+
+// 3 Max from the array
+const arr = [12, 55, 7, 90, 34];
+let max = arr[0];
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > max) {
+    max = arr[i];
+  }
+}
+console.log("Max is", max);
+
+// 4 Min from the array
+let min = arr[0];
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] < min) {
+    min = arr[i];
+  }
+}
+console.log("Min is", min);
+
+//5 Array me even numbers ke sum ko reverse print karna hai
+const arr3 = [1, 2, 3, 4, 5, 6];
+let sum3 = 0;
+for (let i = arr3.length - 1; i >= 0; i--) {
+  if (arr3[i] % 2 === 0) {
+    console.log("Even numbers", arr3[i]);
+    sum3 += arr3[i];
+  }
+}
+console.log(sum3);
+
+//6 Array me even numbers ke sum ko reverse print karna hai
+const arr4 = [1, 2, 3, 4, 5, 6];
+let sum4 = 0;
+for (let i = arr4.length - 1; i >= 0; i--) {
+  if (arr4[i] % 2 !== 0) {
+    console.log("Odd numbers", arr4[i]);
+    sum4 += arr4[i];
+  }
+}
+console.log(sum4);

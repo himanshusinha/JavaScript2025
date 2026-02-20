@@ -78,4 +78,27 @@ function myGreet(message) {
   console.log(`${message} ${this.name}`);
 }
 
-myGreet.call(myInfo);
+myGreet.call(myInfo, "Hello");
+
+const newObj = myGreet.bind(myInfo);
+newObj("Hi");
+
+myGreet.apply(myInfo, ["Hello"]);
+
+const newInfo = {
+  name: "John Doe !!!!",
+};
+
+function myFunc(msg) {
+  console.log(`${msg} ${this.name}`);
+}
+
+// call -> manually allow to use this
+myFunc.call(newInfo, "Bye!!!");
+
+// bind -> create new function automatically set this
+const newFunc = myFunc.bind(newInfo);
+newFunc("Hey!!");
+
+// apply -> pass arguements in array form
+myFunc.apply(myInfo, ["Ooo!!!!"]);
