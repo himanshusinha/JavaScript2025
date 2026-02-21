@@ -152,7 +152,6 @@ for (let i = 0; i < num.length; i++) {
   }
 }
 console.log(total);
-*/
 
 // 20.2.2026
 // 1. 50-100 ke beech ke numbers ka average nikalo
@@ -218,3 +217,44 @@ for (let i = arr4.length - 1; i >= 0; i--) {
   }
 }
 console.log(sum4);
+*/
+
+// 21.2.2026
+// 1 Remove duplicates from array
+const arr = [1, 2, 3, 3, 4, 3, 5];
+let unique = [];
+
+for (let i = 0; i < arr.length; i++) {
+  if (unique.indexOf(arr[i]) === -1) {
+    unique.push(arr[i]);
+  }
+}
+console.log(unique);
+
+// 2 How to find duplicate values in array
+const arr2 = [1, 2, 3, 3, 4, 3, 5];
+let duplicate = [];
+for (let i = 0; i < arr2.length; i++) {
+  if (arr2.indexOf(arr2[i]) !== i && duplicate.indexOf(arr2[i]) === -1) {
+    duplicate.push(arr2[i]);
+  }
+}
+console.log(duplicate);
+
+// 3 second largest from the array
+const arr3 = [1, 2, 3, 3, 4, 3, 5];
+let firstLargest = arr3[0];
+
+for (let i = 0; i < arr3.length; i++) {
+  if (arr3[i] > firstLargest) {
+    firstLargest = arr3[i];
+  }
+}
+
+let secondLargest = arr3[0];
+for (let i = 0; i < arr3.length; i++) {
+  if (arr3[i] > secondLargest && arr3[i] < firstLargest) {
+    secondLargest = arr3[i];
+  }
+}
+console.log(secondLargest);
