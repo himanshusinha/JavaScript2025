@@ -217,7 +217,7 @@ for (let i = arr4.length - 1; i >= 0; i--) {
   }
 }
 console.log(sum4);
-*/
+
 
 // 21.2.2026
 // 1 Remove duplicates from array
@@ -258,3 +258,65 @@ for (let i = 0; i < arr3.length; i++) {
   }
 }
 console.log(secondLargest);
+*/
+
+// 22.2.2026
+// 1 middle ke number nikalo
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < arr.length; i++) {
+  if (i === arr.length / 2 || i === arr.length / 2 - 1) {
+    console.log(arr[i]);
+  }
+}
+
+// 2 find missing number from array
+function findMissingNumber(arr1) {
+  let n = arr1.length + 1;
+  let sumOfFirstN = (n * (n + 1)) / 2;
+  let sumOfArray = 0;
+  for (let i = 0; i < arr1.length; i++) {
+    sumOfArray = sumOfArray + arr1[i];
+  }
+  let missingNumber = sumOfFirstN - sumOfArray;
+  return missingNumber;
+}
+const arr1 = [1, 2, 3, 4, 6];
+const missingNumber = findMissingNumber(arr1);
+console.log("Missing Number is :", missingNumber);
+
+// 23.2.2026
+
+// 1 Check Whether Two Strings Are Anagram Of Each Other
+function checkAnagram(str1, str2) {
+  let n1 = str1.length;
+  let n2 = str2.length;
+
+  if (n1 !== n2) return false;
+
+  for (let i = 0; i < n1 - 1; i++) {
+    if (str1[i] !== str2[i]) return false;
+    return true;
+  }
+}
+let str1 = ["t", "e", "s", "t"];
+let str2 = ["t", "t", "e", "w"];
+
+if (checkAnagram(str1, str2)) {
+  console.log("Both strings are anagrams");
+} else {
+  console.log("Both strings are not anagrams");
+}
+
+// 2 check vowels
+function containsOnlyVowels(str) {
+  const vowels = "aeiouAEIOU";
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.indexOf(str[i]) === -1) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(containsOnlyVowels("aeiou")); // Output: true
+// console.log(containsOnlyVowels("hello")); // Output: false
