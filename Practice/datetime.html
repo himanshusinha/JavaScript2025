@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Date and Time</title>
+  </head>
+  <body>
+    <h1>Display Date and Time</h1>
+    <p id="demo"></p>
+    <script>
+      function display() {
+        document.getElementById("demo").innerHTML = new Date();
+      }
+    </script>
+
+    <button onclick="display()">show</button>
+  </body>
+</html>

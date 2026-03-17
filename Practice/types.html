@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Types</title>
+  </head>
+  <body>
+    <h1>Data Types in JavaScript</h1>
+    <p id="demo"></p>
+
+    <script>
+      function DataType() {
+        /*
+          JavaScript Data Types:
+
+          1. String  -> Text ("Hello")
+          2. Number  -> Integers & decimals (10, 5.5)
+          3. BigInt  -> Large numbers
+          4. Boolean -> true / false
+          5. Object  -> Key-value pairs
+          6. Array   -> List of values
+          7. Date    -> Date object
+          8. Undefined -> Variable declared but no value
+          9. Null    -> Empty value
+          10. Symbol -> Unique identifier
+        */
+
+        // String
+        let color = "Yellow";
+
+        // Number
+        let length = 16;
+
+        // BigInt
+        let bigNumber = 1234567890123456789012345n;
+
+        // Boolean
+        let isTrue = true;
+
+        // Object
+        const person = { firstName: "John", lastName: "Doe" };
+
+        // Array
+        const cars = ["Saab", "Volvo", "BMW"];
+
+        // Date
+        const date = new Date("2022-03-25");
+
+        // Undefined
+        let notDefined;
+
+        // Null
+        let emptyValue = null;
+
+        // Symbol
+        const uniqueId = Symbol("id");
+
+        // Display output
+        document.getElementById("demo").innerHTML = `
+          String: ${color} <br>
+          Number: ${length} <br>
+          BigInt: ${bigNumber} <br>
+          Boolean: ${isTrue} <br>
+          Object: ${person.firstName} ${person.lastName} <br>
+          Array: ${cars.join(", ")} <br>
+          Date: ${date.toDateString()} <br>
+          Undefined: ${notDefined} <br>
+          Null: ${emptyValue} <br>
+          Symbol: ${uniqueId.toString()}
+        `;
+      }
+    </script>
+
+    <button onclick="DataType()">Show Data Types</button>
+  </body>
+</html>
