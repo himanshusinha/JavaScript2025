@@ -1,3 +1,4 @@
+/*  
 // 1 Even numbers print + count + sum
 const num = [1, 2, 3, 4, 5, 6];
 
@@ -332,3 +333,159 @@ for (let i = 0; i < str5.length; i++) {
   }
 }
 console.log(result4);
+*/
+// Date 24.3.2026
+
+// 23 Find Largest And Smallest In One Loop
+let numVal = [10, 5, 30, 20, 15];
+
+let largestVal = numVal[0];
+let smallestVal = numVal[0];
+
+for (let i = 0; i < numVal.length; i++) {
+  if (numVal[i] > largestVal) {
+    largestVal = numVal[i];
+  }
+
+  if (numVal[i] < smallestVal) {
+    smallestVal = numVal[i];
+  }
+}
+
+// Print results
+console.log("Largest Value", largestVal);
+console.log("Smallest Value", smallestVal);
+
+// 24 Move All Zeros To Last Position
+
+// Input array
+const newVal = [1, 0, 2, 0, 3, 4, 0];
+
+// Pointer to track position of non-zero elements
+let j = 0;
+
+// Loop through array
+for (let i = 0; i < newVal.length; i++) {
+  if (newVal[i] !== 0) {
+    [newVal[i], newVal[j]] = [newVal[j], newVal[i]];
+    j++;
+  }
+}
+
+console.log(newVal);
+
+// 25 Find First Repeating Character
+const str = "swiss";
+
+for (let i = 0; i < str.length; i++) {
+  if (str.indexOf(str[i]) !== str.lastIndexOf(str[i])) {
+    console.log(str[i]);
+    break;
+  }
+}
+
+// 26 Character Frequency Using Reduce and also repeating characters
+const repeating = "programming";
+
+const unique = repeating.split("").reduce((acc, curr) => {
+  acc[curr] = (acc[curr] || 0) + 1;
+
+  return acc;
+}, {});
+
+console.log(unique);
+
+for (let key in unique) {
+  if (unique[key] > 1) {
+    console.log(key);
+  }
+}
+
+// const str2 = "programming";
+// for (let i = 0; i < str2.length; i++) {
+//   if (str2.indexOf(str2[i] !== str2.lastIndexOf(str2[i]))) {
+//     console.log(str2[i]);
+//   }
+// }
+// unique Character ke liye
+const str2 = "programming";
+let printed = "";
+
+for (let i = 0; i < str2.length; i++) {
+  if (
+    str2.indexOf(str2[i]) !== str2.lastIndexOf(str2[i]) &&
+    !printed.includes(str2[i])
+  ) {
+    console.log("Unique repeating character:", str2[i]);
+    printed += str2[i];
+  }
+}
+console.log("All repeating characters:", printed);
+
+// JavaScript programs to sort array without using sort ascending order
+const arr = [5, 3, 8, 4, 2];
+
+console.log("Before Sorting:", arr);
+
+let temp;
+
+for (let i = 0; i < arr.length - 1; i++) {
+  // ascending order
+  // if (arr[i] > arr[i + 1]) {
+  //   temp = arr[i];
+  //   arr[i] = arr[i + 1];
+  //   arr[i + 1] = temp;
+  //   i = -1;
+  // }
+
+  //descending order
+  // ascending order
+  if (arr[i] < arr[i + 1]) {
+    temp = arr[i];
+    arr[i] = arr[i + 1];
+    arr[i + 1] = temp;
+    i = -1;
+  }
+}
+
+console.log("After Sorting:", arr);
+
+const arr1 = [
+  { id: 1, firstName: "anshu" },
+  { id: 2, firstName: "avni" },
+];
+
+const arr2 = [
+  { id: 1, lastName: "shetty" },
+  { id: 2, lastName: "singh" },
+];
+
+const result = arr1.map((item) => {
+  let match = arr2.find((e1) => {
+    return e1.id === item.id;
+  });
+
+  return {
+    ...item,
+    ...match,
+  };
+});
+console.log(result);
+const arr3 = [1, 2, 3, 4];
+const arr4 = [3, 4, 5, 6];
+
+const newResult = arr3.filter((item) => arr4.includes(item));
+console.log(newResult);
+
+const arr11 = [
+  { id: 1, name: "A" },
+  { id: 2, name: "B" },
+];
+
+const arr12 = [
+  { id: 2, name: "B" },
+  { id: 3, name: "C" },
+];
+
+const newResult2 = arr11.filter((a) => arr12.some((b) => b.id === a.id));
+console.log(newResult2);
