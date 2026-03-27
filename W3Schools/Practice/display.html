@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show</title>
+  </head>
+  <body>
+    <h1>Show hide Text</h1>
+    <p id="demo">Toggle data</p>
+    <script>
+      function showHide() {
+        let element = document.getElementById("demo");
+        if (element.style.display === "none") {
+          element.style.display = "block";
+        } else {
+          element.style.display = "none";
+        }
+      }
+    </script>
+    <button onclick="showHide()">Show / Hide</button>
+  </body>
+</html>
