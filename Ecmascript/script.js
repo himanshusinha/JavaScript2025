@@ -68,3 +68,72 @@ const myPromise = new Promise((resolve, reject) => {
     reject("Something went wrong");
   }
 });
+myPromise.then((res) => console.log(res)).catch((err) => console.log(err));
+
+const addition = (...num) => {
+  return num.reduce((a, b) => a + b);
+};
+const result1 = addition(10, 20, 20, 30);
+console.log(result1);
+
+const arr11 = [1, 2, 3, 4, 5];
+const arr12 = [...arr11, 6, 7, 8, 9];
+console.log(arr12);
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greeting() {
+    console.log(`Hello ${this.name}`);
+  }
+}
+const person = new Person("Himanshu");
+person.greeting();
+
+// ES2016 (ES6) Features
+/////////////////////////////////////////////////////////////////////////////////
+
+const arrNum = [1, 2, 3];
+console.log(arrNum.includes(5));
+
+console.log(3 ** 2);
+
+const myNewPromise = new Promise((resolve) => {
+  setTimeout(() => resolve("Data"), 1000);
+});
+async function getData() {
+  const result = await myNewPromise;
+  console.log(result);
+}
+
+getData();
+
+async function myLogin() {
+  new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("print my data");
+      resolve();
+    }, 1000);
+  });
+}
+console.log("A");
+await myLogin();
+console.log("B");
+
+// Promise Example
+const myNewPromise2 = new Promise((resolve, reject) => {
+  const status = true;
+
+  if (status) {
+    resolve("Data get"); // pass value to then
+  } else {
+    reject("Error"); // pass value to catch
+  }
+});
+
+// Use the promise
+myNewPromise2
+  .then((res) => console.log(res)) // success
+  .catch((err) => console.log(err)); // error
