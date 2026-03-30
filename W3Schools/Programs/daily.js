@@ -1,4 +1,6 @@
-// Date 28.3.2026
+/* 
+
+// Date 29.3.2026
 
 // 1 JavaScript Program to Add Two Numbers
 
@@ -47,3 +49,40 @@ if (checkNum > 0) {
 } else {
   console.log("Invalid Number");
 }
+
+*/
+
+// Date 30.3.2026
+
+// 1  JavaScript Program to Swap Two Variables
+
+let a = 40;
+let b = 30;
+
+console.log(`before swap a= ${a}`);
+console.log(`before swap b= ${b}`);
+
+[b, a] = [a, b];
+
+console.log(`after swap a= ${a}`);
+console.log(`after swap b= ${b}`);
+
+// 2 JavaScript Program to Find the Square Root
+
+const x = 25;
+console.log(`Sqaure root of ${x} :`, Math.sqrt(x));
+
+// 3 JavaScript Program To Print Hello World
+
+console.log("Hello World");
+
+// 4 JavaScript Program to Calculate the Area of a Triangle
+
+let p = 10;
+let q = 20;
+let r = (1 / 2) * p * q;
+console.log(r);
+
+// 5 Javascript Program to Generate a Random Number from 1 to 5
+
+console.log(Math.floor(Math.random() * 5) + 1);

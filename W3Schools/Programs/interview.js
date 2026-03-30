@@ -1,4 +1,6 @@
-// Date 28.3.2026
+// Date 29.3.2026
+
+/* 
 
 const data2 = [1, 2, 2, 2, 3, 3, 4, 5, 5, 5, 6, 6, 7, 8, 6, 6, 6, 6, 6];
 
@@ -70,4 +72,60 @@ function missingNumber(arry) {
   }
   let missNum = sumOfNArray - sum;
   return missNum;
+}
+*/
+// 1 Anagram
+function checkAnagram(str1, str2) {
+  let n1 = str1.length;
+  let n2 = str2.length;
+
+  if (n1 !== n2) return false;
+
+  str1.sort();
+  str2.sort();
+
+  for (let i = 0; i < n1; i++) {
+    if (str1[i] !== str2[i]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+let str4 = ["t", "e", "s", "t"];
+let str5 = ["t", "e", "s", "w"];
+
+if (checkAnagram(str4, str5)) {
+  console.log("Both strings are anagrams");
+} else {
+  console.log("Both strings are not anagrams");
+}
+
+// 2 Factorial
+let num = 5;
+let fact = 1;
+
+for (let i = 1; i <= num; i++) {
+  fact = fact * num;
+}
+console.log(fact);
+
+// 3 Palindrome
+
+let str = "NAMAN";
+let isPalindrome = true;
+let j = str.length - 1;
+for (let i = 0; i < str.length / 2; i++) {
+  if (str[i] !== str[j]) {
+    isPalindrome = false;
+    break;
+  }
+  j--;
+}
+
+if (isPalindrome) {
+  console.log("Palindrome");
+} else {
+  console.log("Not Palindrome");
 }

@@ -130,7 +130,7 @@ line",
 console.log(`String with
 multiple
 line`);
- */
+
 
 const birthYear = 1990;
 let century;
@@ -140,3 +140,182 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+
+
+// Type Conversion(explicit)->manually by developer and Type Coersion (implicit) automatically by javascript
+// Type Conversion(explicit)
+const inputYear = "1991";
+console.log(typeof inputYear, inputYear);
+console.log(Number(inputYear) + 10);
+
+console.log(Number("Jonas"));
+console.log(typeof NaN);
+console.log(String(23), 23);
+
+// Type Coersion (implicit)
+console.log("I'am '+ 23 + years old'");
+console.log("23" - "10" - 3);
+console.log("23" + 2);
+
+let n = "1" + 1; // 11
+n = n - 1; // 11 - 1 = 10
+console.log(n);
+
+console.log(2 + 3 + 4 + "5"); // 95
+console.log("10" - "4" - "3" - 2 + "5"); // 15
+
+// Truthy Falsy Values
+
+// 5 Falsy value 0 null undefined '' NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 100;
+if (money) {
+  console.log("Don't spent it all :)");
+} else {
+  console.log("You should get a job");
+}
+
+let height = 0;
+if (height) {
+  console.log("YAY! height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}
+
+// Equality Operators == vs ===
+
+const age = "18";
+// === check both type and value
+if (age === 18) console.log("You just became an adult :D (strict)");
+
+// == check only value and convert type automatically
+if (age == 18) console.log("You just became an adult :D (loose)");
+
+const favourite = Number(prompt("What's your favourite number"));
+
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  console.log("Cool! 23 is an amazing number");
+} else if (favourite === 7) {
+  console.log("7 is also a cool number");
+} else if (favourite === 9) {
+  console.log("9 is also a cool number");
+} else {
+  console.log("Number is not in 7 ,9 and 23");
+}
+
+if (favourite !== 23) console.log("Why not 23!");
+
+// != only check value not type
+// !== check both value and type
+// 23 !== 23        // false (value same, type same)
+// "23" !== 23      // true (type different)
+// 10 !== 20        // true (value different)
+
+
+// Logical Operators
+const hasDriversLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicense && hasGoodVision); // both true then true
+console.log(hasDriversLicense || hasGoodVision); // if one is false then false // if all true then true
+console.log(!hasDriversLicense); // reverse condition
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sarah is able to drive");
+// } else {
+//   console.log("Someone else should drive");
+// }
+const isTired = true;
+console.log(hasDriversLicense || hasGoodVision || isTired);
+console.log(hasDriversLicense && hasGoodVision && isTired); // if one is false then false
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("Someone else should drive");
+}
+
+// switch statement
+const day = "monday";
+switch (day) {
+  case "monday":
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+
+  case "friday":
+    console.log("Record videos");
+    break;
+
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend 😄");
+    break;
+
+  default:
+    console.log("Not a valid day!");
+}
+
+// if else
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy the weekend 😄");
+} else {
+  console.log("Not a valid day!");
+}
+
+
+// statement vs expression
+
+// expression Expressions An expression is any unit of code that can be evaluated to a single value.
+3 + 4;
+1991;
+true && false && !false;
+
+// statement Statements A statement is an instruction to the JavaScript engine to perform a specific action
+if (23 > 10) {
+  const str = "23 is bigger";
+}
+const me = "Jonas";
+console.log(`I'm ${2037 - 1991} years old ${me}`);
+ */
+
+// Ternary operators
+const age = 15;
+const drink = age > 18 ? "wine 🍷" : "water 💧";
+
+let drink2;
+if (age > 18) {
+  drink2 = "wine 🍷";
+} else {
+  drink2 = "water💧";
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
